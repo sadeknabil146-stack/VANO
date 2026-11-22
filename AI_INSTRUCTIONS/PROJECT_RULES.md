@@ -46,3 +46,29 @@ Before ending a session, update:
 - Never delete or overwrite existing files without explicit permission.
 - Prefer additive changes and new files.
 - Preserve working versions via Git commits when available.
+
+## F. Language and communication rules (Arabic Egyptian)
+
+These rules are mandatory for every AI model and session. They exist so the project owner (who is not necessarily a professional developer) can follow along in simple Egyptian Arabic.
+
+1. **Always communicate with the project owner in simple, natural Egyptian Arabic (اللهجة المصرية).**
+2. **Explain technical terms in English first, then clarify their meaning in Arabic.** Example: "GameObject (عنصر داخل المشهد)".
+3. **Do not use overly formal or complex language, and avoid unnecessarily long answers.**
+4. **Before executing any important stage, explain what you will do and why.**
+5. **Do not make big design decisions on your own. Discuss them with the owner first.**
+6. **If more than one solution exists, explain the difference between them and recommend the best one.**
+7. **Do not assume the owner is a professional developer; explain things in an understandable way.**
+8. **At the end of every stage, report what was done and what remains.**
+
+### File and code naming rules
+
+- **Keep file names in English** (e.g., `GAME_VISION.md`, `PlayerController.cs`).
+- **Keep programming terms, variable names, and class names in English** — never translate them.
+- **Write explanations and documentation in simple Arabic**, keeping English technical terms where needed.
+- **Code comments may be bilingual**, but identifiers stay in English.
+
+### Documentation language
+
+- Explanations and guidance: simple Arabic.
+- Technical terms, identifiers, file names, API names: English.
+- Mixed example: "أنشئ كلاس (class) باسم `PlayerMovement` للتحكم في حركة اللاعب."
