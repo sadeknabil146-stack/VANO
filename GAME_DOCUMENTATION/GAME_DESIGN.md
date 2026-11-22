@@ -25,6 +25,20 @@ The player starts with a regular snowboard. Via a **double-tap** action, the pla
 | Snow Sled | Different control feel (e.g., slide-heavy) | Planned |
 | Snowmobile | Higher speed / different handling | Planned |
 
+### Finalized vehicle stats (Milestone 1 prototype)
+
+| Attribute | Standard Snowboard | Big Snowboard | Snow Sled | Snowmobile |
+|---|---|---|---|---|
+| Max speed | 28 | 26 | 30 | 34 |
+| Acceleration | 14 | 12 | 15 | 16 |
+| Steer torque | 6 | 4 | 5 | 8 |
+| Jump force | 7 | 5 | 4 | 4 |
+| Friction | 0.60 | 0.70 | 0.45 | 0.50 |
+| Drift friction | 0.25 | 0.35 | 0.20 | 0.18 |
+| Slide speed mult | 0.75 | 0.70 | 0.85 | 0.80 |
+| Duration (s) | 12 | 12 | 12 | 10 |
+| Cooldown (s) | 2 | 2 | 2 | 2 |
+
 Rules:
 - Each vehicle has **different characteristics** and a **balanced usage duration**.
 - Transformation is not a permanent upgrade; durations are balanced so no single vehicle dominates.

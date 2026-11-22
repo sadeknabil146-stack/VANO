@@ -2,34 +2,30 @@
 
 ## Task
 
-**Phase 0 exit work: resolve open design decisions and produce an art direction brief.**
+**Assemble and test Milestone 1 prototype in Unity Editor.**
 
-Before any gameplay is built, close the Phase 0 open decisions so implementation does not rely on assumptions.
+Milestone 1 code is implemented under `VANO/UnityProject/`. It has NOT been compiled or tested (no Unity Editor available in this environment). Next step is Editor verification and tuning.
 
 ## Scope
 
-1. Review `KNOWN_ISSUES.md` open decisions.
-2. Decide and document (in the relevant doc + mark resolved in `KNOWN_ISSUES.md`):
-   - Control scheme.
-   - Vehicle stats/durations table (at least qualitative targets).
-   - Transformation behavior (cycle/selection, cooldown, mid-air, invulnerability).
-   - Speed/difficulty curve approach.
-   - Unity version + render pipeline.
-   - Min spec device + target FPS.
-3. Produce a one-page art direction brief: style, palette, typography, logo direction, character silhouette notes. Must satisfy the "NO GENERIC AI DESIGN" rule.
+1. Open `VANO/UnityProject` in Unity 2022.3 LTS.
+2. Follow `VANO/UnityProject/SCENE_SETUP.md` to assemble the scene.
+3. Create 4 VehicleData assets and assign to TransformationController.
+4. Compile and fix any errors.
+5. Play-test: downhill feel, steering, jump, slide, drift, transform, crystal collection, obstacle crash, restart.
+6. Tune PlayerController values for game feel.
+7. Record test results in `COMPLETED_TASKS.md` and issues in `KNOWN_ISSUES.md`.
 
 ## Acceptance criteria
 
-- Each decided item is recorded in the appropriate `GAME_DOCUMENTATION/` file and marked resolved in `KNOWN_ISSUES.md`.
-- Art direction brief exists and is reviewed against the creative rule.
-- `CURRENT_STATUS.md` updated.
-- No gameplay code written.
+- Project compiles without errors.
+- Prototype runs and demonstrates downhill snowboarding feel.
+- No three-lane system; free movement.
+- Transform (double-tap) works without interfering with steering.
+- Crash -> game over -> restart works.
 
 ## Not in scope
 
-- Building Unity project or gameplay.
-- Final economy numbers (can be deferred to prototype tuning, but approach must be decided).
-
-## Follow-up task (after this)
-
-Build core movement prototype in a minimal test scene (Phase 2).
+- Final art / production assets.
+- Economy numbers.
+- Leaderboards / challenges / ads.

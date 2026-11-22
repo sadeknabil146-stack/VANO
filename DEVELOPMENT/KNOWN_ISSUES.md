@@ -48,6 +48,18 @@ This file tracks unresolved problems and open design decisions. Do not assume an
 - Identity risk: avoid generic AI look; requires art direction before production.
 - Scope creep: keep tasks small and testable.
 
-## Resolved
+## Resolved (Milestone 1 decisions)
 
-_(none yet)_
+- Control scheme: Hybrid (touch zones default + optional joystick/tilt).
+- Physics approach: Unity Physics (Rigidbody) for prototype.
+- Drift: Hybrid (auto-drift at hard steering; manual boost deferred).
+- Landing consequence: slowdown on poor landing (default); crash in high bands (deferred).
+- Transformation: double-tap cycle; mid-air allowed; brief invulnerability 0.5s.
+- Vehicle duration: time-based 10-15s; cooldown 2s.
+- Collision (prototype): lethal obstacles cause crash; slowdown-for-minor deferred.
+- Unity version: 2022.3 LTS (built-in render pipeline; URP recommended later).
+- Generation (prototype): simple random spawner; deterministic seeded generation deferred to production.
+
+## Still open
+
+(see Open design decisions above; economy numbers, art direction, backend, anti-cheat, etc.)

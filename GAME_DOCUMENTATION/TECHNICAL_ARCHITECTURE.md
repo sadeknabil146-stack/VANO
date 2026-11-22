@@ -11,7 +11,7 @@ High-level architecture only. No implementation code. Unity + C#, Android first.
 
 ## 2. Unity version & packages
 
-- Unity LTS version: **OPEN DECISION** (pin a specific LTS and document it).
+- Unity LTS version: **2022.3 LTS** (pinned for prototype; built-in render pipeline; URP recommended for production).
 - Package list: **OPEN DECISION** (keep minimal; avoid unnecessary dependencies).
 
 ## 3. Project structure (proposed, to be finalized)

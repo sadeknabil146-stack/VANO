@@ -4,24 +4,20 @@ Tasks are recorded here only after completion (and testing where applicable).
 
 ## 2026-11-23 — Documentation system
 
-- Created `VANO/` project root structure.
-- Created `GAME_DOCUMENTATION/` with:
-  - `GAME_VISION.md`
-  - `GAME_DESIGN.md`
-  - `GAMEPLAY_SYSTEMS.md`
-  - `UI_UX.md`
-  - `ECONOMY.md`
-  - `TECHNICAL_ARCHITECTURE.md`
-- Created `DEVELOPMENT/` with:
-  - `ROADMAP.md`
-  - `CURRENT_STATUS.md`
-  - `COMPLETED_TASKS.md` (this file)
-  - `KNOWN_ISSUES.md`
-  - `NEXT_TASK.md`
-  - `CHANGELOG.md`
-- Created `AI_INSTRUCTIONS/` with:
-  - `PROJECT_RULES.md`
-  - `MODEL_HANDOFF.md`
-- Created `README.md`.
+- Created `VANO/` project root structure and full documentation system.
+- Created `GAME_DOCUMENTATION/`, `DEVELOPMENT/`, `AI_INSTRUCTIONS/`, `README.md`.
+- Added language/communication rules (Egyptian Arabic) to `PROJECT_RULES.md`.
 
-No gameplay features completed. No code written.
+## 2026-11-23 — Milestone 1 prototype (code)
+
+- Created Unity project skeleton at `VANO/UnityProject/`.
+- Implemented Milestone 1 C# scripts:
+  - `Player/PlayerInput.cs`, `Player/PlayerController.cs`
+  - `Vehicles/VehicleData.cs`, `Vehicles/TransformationController.cs`
+  - `Camera/ThirdPersonCamera.cs`
+  - `Collectibles/Crystal.cs`
+  - `Environment/SpawnManager.cs`
+  - `Obstacles/Obstacle.cs`
+  - `Gameplay/GameManager.cs`, `Gameplay/ScoreManager.cs`
+- Created minimal `Prototype.unity` scene and `SCENE_SETUP.md`.
+- **Not tested in Unity Editor** (no Editor available in this environment). Compilation and runtime verification pending.
