@@ -1,6 +1,6 @@
 # Current Status — VANO: Last Ride
 
-**Last updated:** 2026-11-23 (Milestone 1 + continue system; APK v0.4.0 uploaded to GitHub)
+**Last updated:** 2026-11-23 (v0.5.0: seeded generation + GameMode; APK v0.5.0 uploaded)
 
 ## Stage
 
