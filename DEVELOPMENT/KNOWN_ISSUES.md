@@ -66,4 +66,4 @@ This file tracks unresolved problems and open design decisions. Do not assume an
 
 ## Blockers (Unity)
 
-- **Unity login/license required.** Editor 2022.3.20f1 is installed on D: but no license is active. Personal license activation requires `unity auth login` (opens browser) and user credentials. Cannot proceed with Editor testing/import until the user logs in. Terms file for 2022.3.20f1 is also missing (`UnityEditorSoftwareTerms.rtf`), so `unity terms accept` failed; may need manual acceptance in Editor.
+- **Unity login/license required.** Editor 2022.3.20f1 is installed on D: but no license is active. `unity auth login` was attempted and **timed out** (no browser completion). Personal license activation requires the user to complete sign-in in the browser. Cannot proceed with Editor testing/import until login succeeds. Terms file for 2022.3.20f1 is also missing (`UnityEditorSoftwareTerms.rtf`); may need manual acceptance in Editor. Alternative: activate with a serial (`unity license activate --serial <serial>`).
