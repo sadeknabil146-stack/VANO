@@ -31,10 +31,10 @@ namespace Vano
                 SpawnOne();
             }
             // despawn behind
-            foreach (var c in GameObject.FindGameObjectsWithTag("Crystal"))
-                if (c.transform.position.z < player.position.z - despawnDistance) Destroy(c);
-            foreach (var o in GameObject.FindGameObjectsWithTag("Obstacle"))
-                if (o.transform.position.z < player.position.z - despawnDistance) Destroy(o);
+            foreach (var c in FindObjectsOfType<Crystal>())
+                if (c.transform.position.z < player.position.z - despawnDistance) Destroy(c.gameObject);
+            foreach (var o in FindObjectsOfType<Obstacle>())
+                if (o.transform.position.z < player.position.z - despawnDistance) Destroy(o.gameObject);
         }
 
         private void SpawnOne()
@@ -56,5 +56,3 @@ namespace Vano
         }
     }
 }
-EOF
-echo done

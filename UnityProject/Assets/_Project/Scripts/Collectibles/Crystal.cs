@@ -25,12 +25,10 @@ namespace Vano
 
         void OnTriggerEnter(Collider other)
         {
-            if (!other.CompareTag("Player")) return;
+            if (other.GetComponent<PlayerController>() == null) return;
             GameManager.Instance?.AddCrystals(value);
             ScoreManager.Instance?.AddScore(value * 10);
             Destroy(gameObject);
         }
     }
 }
-EOF
-echo done

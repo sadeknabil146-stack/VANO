@@ -15,5 +15,3 @@ namespace Vano
         }
     }
 }
-EOF
-echo done

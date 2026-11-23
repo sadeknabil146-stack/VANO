@@ -2,30 +2,30 @@
 
 ## Task
 
-**Assemble and test Milestone 1 prototype in Unity Editor.**
+**Manual Play-test and tune Milestone 1 prototype.**
 
-Milestone 1 code is implemented under `VANO/UnityProject/`. It has NOT been compiled or tested (no Unity Editor available in this environment). Next step is Editor verification and tuning.
+Milestone 1 is built and the Android APK exists (`Builds/VANO.apk`). The remaining work is hands-on gameplay feel tuning and iteration.
 
 ## Scope
 
-1. Open `VANO/UnityProject` in Unity 2022.3 LTS.
-2. Follow `VANO/UnityProject/SCENE_SETUP.md` to assemble the scene.
-3. Create 4 VehicleData assets and assign to TransformationController.
-4. Compile and fix any errors.
-5. Play-test: downhill feel, steering, jump, slide, drift, transform, crystal collection, obstacle crash, restart.
-6. Tune PlayerController values for game feel.
-7. Record test results in `COMPLETED_TASKS.md` and issues in `KNOWN_ISSUES.md`.
+1. Open `VANO/UnityProject` in Unity Editor.
+2. Press Play; test downhill feel, steering, jump, slide, drift, transform, crystals, obstacles, crash, restart.
+3. Tune `PlayerController` values (acceleration, steerTorque, jumpForce, friction, driftFriction, slopeBoost, gravityMultiplier).
+4. Tune `ThirdPersonCamera` (offset, smooth, FOV).
+5. Tune `SpawnManager` (intervals, lane width, despawn).
+6. Verify HUD and restart flow.
+7. Rebuild APK after tuning (`Vano > Build Android APK`).
+8. Record findings in `COMPLETED_TASKS.md` / `KNOWN_ISSUES.md`.
 
 ## Acceptance criteria
 
-- Project compiles without errors.
-- Prototype runs and demonstrates downhill snowboarding feel.
+- Prototype feels like downhill snowboarding (not flat movement).
+- All 4 vehicles transform correctly via double-tap.
 - No three-lane system; free movement.
-- Transform (double-tap) works without interfering with steering.
 - Crash -> game over -> restart works.
+- APK builds successfully.
 
 ## Not in scope
 
 - Final art / production assets.
-- Economy numbers.
-- Leaderboards / challenges / ads.
+- Economy numbers, leaderboards, ads, challenges.

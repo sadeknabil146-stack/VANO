@@ -22,11 +22,26 @@ All notable changes to the project are recorded here. Format: [version] — date
 - Milestone 1 prototype scripts (movement, input, camera, vehicles, transform, crystals, obstacles, spawner, game manager).
 - Minimal `Prototype.unity` scene + `SCENE_SETUP.md`.
 
+### Notes
+- Code was not yet compiled or tested (no Unity Editor available at that time).
+
+## [0.3.0] — 2026-11-23
+
+### Added
+- Unity Editor 2022.3.20f1 + Android modules installed on D:.
+- Full playable scene assembled via `Editor/SceneAssembler.cs`.
+- Editor/BuildScript.cs (Android APK build).
+- UI scripts (HUDController, RestartButton).
+- `.gitignore` for Unity.
+- Android APK: `Builds/VANO.apk` (21 MB).
+
 ### Changed
-- `CURRENT_STATUS.md`, `NEXT_TASK.md`, `COMPLETED_TASKS.md` updated to reflect Milestone 1 code (untested).
+- Manifest updated with all built-in modules (incl. Physics).
+- Scripts fixed (removed trailing garbage; component-based tags).
+- `CURRENT_STATUS.md`, `KNOWN_ISSUES.md`, `COMPLETED_TASKS.md`, `NEXT_TASK.md` updated.
 
 ### Fixed
-- None.
+- Compiler errors (Physics module missing, trailing garbage in files).
 
 ### Notes
-- Code is not yet compiled or tested (no Unity Editor available). Runtime verification pending.
+- Compilation verified via batch mode. Android build succeeded. Gameplay feel requires manual Play in Editor.

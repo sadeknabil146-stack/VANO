@@ -16,9 +16,7 @@ namespace Vano
         public float friction = 0.6f;
         public float driftFriction = 0.25f;
         public float slideSpeedMultiplier = 0.75f;
-        public float duration = 12f;   // seconds before auto-revert
+        public float duration = 12f;
         public float cooldown = 2f;
     }
 }
-EOF
-echo done

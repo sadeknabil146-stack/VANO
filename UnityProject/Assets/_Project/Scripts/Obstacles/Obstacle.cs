@@ -11,7 +11,7 @@ namespace Vano
 
         void OnCollisionEnter(Collision collision)
         {
-            if (!collision.collider.CompareTag("Player")) return;
+            if (collision.collider.GetComponent<PlayerController>() == null) return;
             if (lethal)
             {
                 var t = collision.collider.GetComponent<TransformationController>();
@@ -21,5 +21,3 @@ namespace Vano
         }
     }
 }
-EOF
-echo done

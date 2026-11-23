@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73ee24830aa4e642bd315c31566e849, type: 3}
+  m_Name: Vehicle_0_StandardSnowboard
+  m_EditorClassIdentifier: 
+  vehicleName: Standard Snowboard
+  maxSpeed: 28
+  acceleration: 14
+  steerTorque: 6
+  jumpForce: 7
+  friction: 0.6
+  driftFriction: 0.25
+  slideSpeedMultiplier: 0.75
+  duration: 12
+  cooldown: 2

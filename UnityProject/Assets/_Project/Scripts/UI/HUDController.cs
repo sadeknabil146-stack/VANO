@@ -3,9 +3,6 @@ using UnityEngine.UI;
 
 namespace Vano
 {
-    /// <summary>
-    /// Minimal HUD: score, crystals, speed. Wire Text fields in Inspector.
-    /// </summary>
     public class HUDController : MonoBehaviour
     {
         [SerializeField] private Text scoreText;
@@ -40,5 +37,3 @@ namespace Vano
         }
     }
 }
-EOF
-echo done

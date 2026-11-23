@@ -42,7 +42,6 @@ namespace Vano
         {
             if (input == null) return;
 
-            // timers
             if (cooldownTimer > 0f) cooldownTimer -= Time.deltaTime;
             if (invulnTimer > 0f) invulnTimer -= Time.deltaTime;
             if (durationTimer > 0f)
@@ -51,7 +50,6 @@ namespace Vano
                 if (durationTimer <= 0f) RevertToStandard();
             }
 
-            // transform trigger
             if (input.TransformPressed && cooldownTimer <= 0f && !isTransforming)
             {
                 CycleVehicle();
@@ -69,7 +67,6 @@ namespace Vano
             cooldownTimer = v.cooldown;
             invulnTimer = invulnerabilityTime;
             isTransforming = false;
-            // TODO: play transition VFX / swap mesh here
         }
 
         private void RevertToStandard()
@@ -81,5 +78,3 @@ namespace Vano
         }
     }
 }
-EOF
-echo done
