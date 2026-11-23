@@ -56,7 +56,7 @@ VANO/
 
 ## Download (Android APK)
 
-Latest dev build: [VANO.apk (v0.5.0)](https://github.com/sadeknabil146-stack/VANO/releases/download/v0.5.0/VANO.apk)
+Latest dev build: [VANO.apk (v0.6.0)](https://github.com/sadeknabil146-stack/VANO/releases/download/v0.6.0/VANO.apk)
 
 Install: enable "Install unknown apps" on Android, then open the APK.
 
