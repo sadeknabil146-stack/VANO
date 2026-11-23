@@ -31,7 +31,13 @@ namespace Vano
         {
             cam = GetComponent<Camera>();
             if (cam == null) cam = Camera.main;
+            if (player == null) player = FindObjectOfType<PlayerController>();
             if (target == null && player != null) target = player.transform;
+            if (target == null)
+            {
+                var p = GameObject.Find("Player");
+                if (p != null) target = p.transform;
+            }
         }
 
         void LateUpdate()

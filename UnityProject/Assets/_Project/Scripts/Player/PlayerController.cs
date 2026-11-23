@@ -59,6 +59,7 @@ namespace Vano
         {
             if (vehicleData != null) ApplyVehicle(vehicleData);
             if (input == null) input = GetComponent<PlayerInput>();
+            if (input == null) input = FindObjectOfType<PlayerInput>();
         }
 
         void Update()

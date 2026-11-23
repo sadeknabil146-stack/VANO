@@ -23,6 +23,11 @@ namespace Vano
 
         void Update()
         {
+            if (player == null)
+            {
+                var p = GameObject.Find("Player");
+                if (p != null) player = p.transform;
+            }
             if (player == null) return;
             timer -= Time.deltaTime;
             if (timer <= 0f)

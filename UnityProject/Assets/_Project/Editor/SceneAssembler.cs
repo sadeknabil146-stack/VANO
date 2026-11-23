@@ -62,6 +62,8 @@ namespace Vano.Editor
             // --- Camera ---
             var camGO = new GameObject("Main Camera");
             camGO.tag = "MainCamera";
+            camGO.transform.position = new Vector3(0f, 6f, -12f);
+            camGO.transform.LookAt(new Vector3(0f, 2f, -5f));
             var cam = camGO.AddComponent<Camera>();
             cam.clearFlags = CameraClearFlags.Skybox;
             var tpc = camGO.AddComponent<ThirdPersonCamera>();
