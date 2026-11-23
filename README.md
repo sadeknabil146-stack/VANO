@@ -54,9 +54,15 @@ VANO/
 5. Do the work in small, testable steps.
 6. Update `CURRENT_STATUS.md`, `COMPLETED_TASKS.md`, `CHANGELOG.md`, `NEXT_TASK.md`, and `KNOWN_ISSUES.md` before ending a session.
 
+## Download (Android APK)
+
+Latest dev build: [VANO.apk (v0.3.0)](https://github.com/sadeknabil146-stack/VANO/releases/download/v0.3.0/VANO.apk)
+
+Install: enable "Install unknown apps" on Android, then open the APK.
+
 ## Current status
 
-Documentation system created. Gameplay not yet built. See `DEVELOPMENT/CURRENT_STATUS.md`.
+Milestone 1 complete: Unity project, playable prototype scene, Android APK built and uploaded. See `DEVELOPMENT/CURRENT_STATUS.md`.
 
 ## Important rules
 
